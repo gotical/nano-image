@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nano Image — генерация картинок по промпту с телефона</title>
+<meta name="description" content="Android-клиент Image API nano-gpt и совместимых провайдеров: цены до генерации, подписка 100 картинок в день, цензура помечена, свои провайдеры. Открытый исходный код, GPL-3.0.">
+<meta property="og:title" content="Nano Image — картинки по промпту с телефона">
+<meta property="og:description" content="Цены, подписка и цензура — как на ладони. Открытый клиент Image API nano-gpt для Android.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="shots/create-view.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">🎨</div>
+    <h1>Nano Image</h1>
+    <p class="tagline">Генерация картинок по промпту прямо с телефона —<br>
+      с ценами, подпиской и цензурой <b>как на ладони</b></p>
+    <p class="sub">Android-клиент Image API nano-gpt.com и любого совместимого провайдера.
+      Бесплатные модели подписки, почём каждая платная и что именно спишется —
+      приложение показывает <em>до</em> нажатия кнопки, а фактическую цену запроса — после.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/gotical/nano-image/releases/latest/download/nano-image.apk">⬇ Скачать APK v1.0.0</a>
+      <a class="btn ghost" href="https://github.com/gotical/nano-image">Исходник на GitHub</a>
+    </div>
+    <p class="note">Открытый исходный код · GPL-3.0 · без Gradle и androidx · ключи не покидают устройство</p>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <h2>Что умеет</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">🧾</div><h3>Цена видна заранее</h3>
+        <p>На кнопке генерации, в списке и в карточке модели. После запроса показывается
+        фактическая цена из API: подписка вернула $0 или деньги списались с баланса.</p></div>
+      <div class="card"><div class="ico">🎁</div><h3>Подписка: 100 в день</h3>
+        <p>Остаток дневной квоты и время сброса — в шапке приложения. Четыре модели
+        подписки рисуют бесплатно, пока квота не кончилась.</p></div>
+      <div class="card"><div class="ico">🔞</div><h3>Цензура помечена</h3>
+        <p>Бейдж U — модель без цензуры (платно всегда), C — с цензурой, SUB — покрыта
+        подпиской. Фильтры по всем трём признакам и поиск по каталогу из 264 моделей.</p></div>
+      <div class="card"><div class="ico">💬</div><h3>Честное подтверждение</h3>
+        <p>Всё, что спишет деньги, спрашивает подтверждение диалогом с суммой.
+        Бесплатная генерация по подписке идёт без лишних вопросов.</p></div>
+      <div class="card"><div class="ico">🔌</div><h3>Свои провайдеры</h3>
+        <p>Адрес и ключ задаются в настройках, провайдеров может быть несколько.
+        Каталог, цены, подписочные модели и кэш у каждого свои.</p></div>
+      <div class="card"><div class="ico">🖼</div><h3>Image-to-image</h3>
+        <p>Модели с поддержкой референса принимают ваши фото: лимиты и разрешения
+        берутся из данных модели, а не выдумываются.</p></div>
+      <div class="card"><div class="ico">🗂</div><h3>Своя галерея</h3>
+        <p>Результаты — в скрытую папку Pictures/.nano с маркером .nomedia, рядом .json
+        с промптом и фактической ценой. Просмотр с pinch-zoom и «Поделиться».</p></div>
+      <div class="card"><div class="ico">🔐</div><h3>Приватность</h3>
+        <p>Ключи живут только в приватном каталоге приложения, трафик только HTTPS,
+        никакой аналитики и сторонних SDK.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="alt">
+  <div class="wrap">
+    <h2>Цены и подписка</h2>
+    <p class="lead">Подписка Pro nano-gpt покрывает четыре модели — на них дневная квота
+      100 картинок. Остальные списывают деньги с баланса, и приложение всегда говорит, сколько.</p>
+    <table>
+      <thead><tr><th>Модель</th><th>Обычная цена</th><th>С подпиской</th></tr></thead>
+      <tbody>
+        <tr><td><code>z-image-turbo</code></td><td>от $0.0119</td><td class="ok">$0 · 100/день</td></tr>
+        <tr><td><code>hidream</code></td><td>от $0.0153</td><td class="ok">$0 · 100/день</td></tr>
+        <tr><td><code>qwen-image</code></td><td>от $0.02</td><td class="ok">$0 · 100/день · image-to-image</td></tr>
+        <tr><td><code>chroma</code></td><td>от $0.0255</td><td class="ok">$0 · 100/день</td></tr>
+      </tbody>
+    </table>
+    <p class="lead">Ещё 37 моделей каталога — без цензуры (бейдж U): в подписку они не входят
+      никогда. Когда дневная квота кончилась, приложение предложит платный проход,
+      но только после подтверждения с суммой.</p>
+  </div>
+</section>
+
+<section id="shots">
+  <div class="wrap">
+    <h2>Как это выглядит</h2>
+    <div class="shots">
+      <figure><img src="shots/create-view.jpg" alt="Экран создания: промпт, модель с ценой, параметры"><figcaption>Создать: цена на кнопке до нажатия</figcaption></figure>
+      <figure><img src="shots/models-view.jpg" alt="Список моделей с бейджами SUB и U и ценами"><figcaption>Модели: подписка, цензура, прайс</figcaption></figure>
+      <figure><img src="shots/model-view.jpg" alt="Карточка модели с прайсом по разрешениям"><figcaption>Карточка: прайс по разрешениям</figcaption></figure>
+      <figure><img src="shots/settings-view.jpg" alt="Настройки: провайдеры, бесплатные модели, папка"><figcaption>Настройки: провайдеры и подписка</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="providers" class="alt">
+  <div class="wrap">
+    <h2>Свои провайдеры</h2>
+    <p class="lead">Приложение говорит на Image API в формате nano-gpt. Если у вас собственный
+      прокси или совместимый сервер — добавьте его в настройках: название, адрес, ключ
+      и список бесплатных моделей. Хвост <code>/api/v1</code> в адресе можно не убирать.</p>
+    <pre>GET  /api/v1/images/models          каталог моделей с прайсом
+POST /api/v1/images                 генерация (base64 в ответе)
+GET  /api/subscription/v1/usage     дневная квота (может отсутствовать)
+GET  /api/v1/usage/requests/{id}    фактическая цена запроса</pre>
+    <p class="lead">Если провайдер не отдаёт квоту — все его модели считаются платными,
+      и каждая генерация подтверждается отдельно.</p>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <h2>Сборка и установка</h2>
+    <p class="lead">Готовый APK — в <a href="https://github.com/gotical/nano-image/releases">релизах</a>.
+      Собрать самому можно в Termux, без Gradle и Android Studio:</p>
+    <pre>pkg install aapt2 apksigner kotlin javac zip
+git clone https://github.com/gotical/nano-image.git
+cd nano-image &amp;&amp; ./build.sh        # -&gt; nanoimage.apk
+pm install -r nanoimage.apk        # adb или root</pre>
+    <p class="lead">Исходники — чистый Kotlin без androidx: разметка рисуется программно,
+      JSON разбирает собственный мини-парсер. Android 8.0 и новее.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Nano Image</b> · открытый клиент Image API · GPL-3.0</p>
+    <p>Не аффилировано с nano-gpt.com. © 2026 RybinskLab ·
+      <a href="https://rybinsklab.ru">rybinsklab.ru</a> ·
+      <a href="https://github.com/gotical/nano-image">github.com/gotical/nano-image</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
